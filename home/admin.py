@@ -38,4 +38,3 @@ admin.site.register(Category)
 admin.site.register(Tag)
 admin.site.register(Music)
 admin.site.register(FriendLink)
-admin.site.site_header = '站点管理'
