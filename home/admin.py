@@ -1,12 +1,7 @@
 from django.contrib import admin
 from .models import Post, Category, Tag, Music, FriendLink
 
-
 # Register your models here.
-
-
-class TagInline(admin.TabularInline):
-    model = Tag
 
 
 @admin.register(Post)
@@ -43,3 +38,4 @@ admin.site.register(Category)
 admin.site.register(Tag)
 admin.site.register(Music)
 admin.site.register(FriendLink)
+admin.site.site_header = '站点管理'
