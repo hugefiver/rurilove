@@ -19,7 +19,7 @@ class PostAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {
             'fields': (('title', 'author', 'show_desc'),
-                       ('category', 'tag'),
+                       ('category', 'tag', 'toc'),
                        'music',
                        'desc',
                        'body')

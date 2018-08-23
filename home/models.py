@@ -56,8 +56,9 @@ class Post(models.Model):
     # 音乐
     music = models.ForeignKey(Music, null=True, blank=True,
                               on_delete=models.CASCADE)
-    # 开放评论区
+    # 开放评论区 目录
     can_comment = models.BooleanField('开放评论区', default=True)
+    toc = models.BooleanField('TOC', default=False)
     # 正文
     body = models.TextField('正文')
     view_count = models.IntegerField('浏览量', default=0)
