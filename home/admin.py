@@ -16,7 +16,7 @@ class PostAdmin(admin.ModelAdmin):
             'fields': (('title', 'author',
                         'show_desc', 'cc'),
                        ('category', 'tag', 'toc'),
-                       'music',
+                       ('has_music', 'music'),
                        'desc',
                        'body')
         }),

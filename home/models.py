@@ -54,6 +54,7 @@ class Post(models.Model):
     category = models.ForeignKey(Category, verbose_name='分类', on_delete=models.CASCADE)
     tag = models.ManyToManyField(Tag, blank=True)
     # 音乐
+    has_music = models.BooleanField('Has Music', default=True)
     music = models.ForeignKey(Music, null=True, blank=True,
                               on_delete=models.CASCADE)
     # 开放评论区 目录
