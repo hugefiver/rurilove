@@ -39,6 +39,7 @@ def post(request, id):
     p.save()
 
     md_extensions = ['markdown.extensions.extra',
+                     'markdown.extensions.fenced_code',
                      'markdown.extensions.codehilite']
     if p.toc:
         md_extensions.append('markdown.extensions.toc')
