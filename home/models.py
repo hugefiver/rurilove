@@ -29,7 +29,7 @@ class Music(models.Model):
     url = models.URLField('歌曲链接')
 
     def __str__(self):
-        return self.name + ' - ' + self.author
+        return '{} - {}'.format(self.name, self.author)
 
 
 class Post(models.Model):
@@ -62,6 +62,7 @@ class Post(models.Model):
     # 正文
     body = models.TextField('正文')
     view_count = models.IntegerField('浏览量', default=0)
+    cc = models.BooleanField('使用CC授权', default=True)
 
     def __str__(self):
         return '[{cate}]{title}'.format(cate=self.category,

@@ -13,7 +13,8 @@ class PostAdmin(admin.ModelAdmin):
     list_per_page = 20
     fieldsets = (
         (None, {
-            'fields': (('title', 'author', 'show_desc'),
+            'fields': (('title', 'author',
+                        'show_desc', 'cc'),
                        ('category', 'tag', 'toc'),
                        'music',
                        'desc',
