@@ -6,7 +6,10 @@
         {%block main_title%}Hugefiver's Home Page{%endblock%}
         {%block sub_title%}{%endblock%}
     </title>
+    {% block load_things %}
     <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+    {% endblock %}
 </head>
 <body>
 {% block body %}
