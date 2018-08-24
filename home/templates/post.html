@@ -1,1 +1,6 @@
 {% extends 'home.html' %}
+
+{% block load_things %}
+    {{ block.super }}
+    {% static 'css/pygments.css' %}
+{% endblock %}
